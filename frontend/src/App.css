@@ -3,82 +3,122 @@
 }
 
 .App-logo {
-  padding-left: 25px;
-  padding-top: 19px;
-display: block;
-width: 93.54px;
-height: 42.07px;
-/*top: 19px;
-left: 25px;*/
-box-sizing: border-box;
+  display: block;
+  float: left;
+  width: 7vw;
+  height: 3vw;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  box-sizing: border-box;
 }
 
 .App-navbar {
-  display: block;
+  display: flex;
   background-color: rgba(255, 255, 255, 1);
-  height: 81px;
+  height: 5vw;
   width: 100%;
   top: 0;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: sticky;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  color: rgba(4, 57, 94, 1);
+  line-height: 26.63px;
   padding-top: 0px;
-  overflow: auto;
+  overflow: hidden;
   box-shadow: 0px 1px 14px rgba(2, 27, 44, 1);
-  text-align: left;
+  text-align: right;
   box-sizing: border-box;
+}
 
-  /*.App-register {
+.App-login {
+  width: 58px;
+  line-height: 10vh;
+  padding-left: 79vw; 
+  text-decoration: none;
+  font-size: 3vh;
+  font: Inter;
+  font-weight: 500;
+}
+
+.App-register {
     width: 88px;
     height: 27px;
-    padding-top: 27px;
-    padding-left: 1319px; 
-  }*/
-
-}
+    top: 15%;
+    padding-top: 15vh;
+    padding-left: 2vw; 
+    text-decoration: none;
+    font-size: 3vh;
+    font: Inter;
+    font-weight: 500;
+  }
 
 .App-footer {
   background-color: rgba(255, 31, 102, 1);
-  width: 1440px;
+  width: 100%;
   height: 154px;
   top: 1990px;
-  display: inline;
+  display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: black;
   box-sizing: border-box;
 }
 
-.App-navbarp {
+.App-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  width: 491px;
+  height: 522px;
+  top: 301px;
+  left: 474px;
+  border-radius: 22px;
+  background-color: rgba(4, 57, 94, 1);
+  line-height: 29.05px;
+  box-shadow: 0px 1px 9px rgba(67, 67, 67, 1);
+}
+
+.App-ics {
+  padding-bottom: 4vh;
+  padding-left: 28vw;
+}
+
+.App-pp-log {
+  color: rgba(255, 255, 255, 1);
   font: Inter;
-  weight: 500;
-  size: 22px;
-  line-height: 26.63px;
-  float: left;
-  box-sizing: border-box;
+  font-size: 5vh;
+  font-weight: 700;
+  padding-bottom: 35vh;
 }
 
-.App-navbarp:hover {
-  background-color: #111;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-
+.App-pp-buton {
+  width: 163px;
+  height: 50px;
+  top: 733px;
+  left: 638px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  font: Inter;
+  font-weight: 600;
+  font-size: 3.2vh;
+  color: rgba(4, 57, 94, 1);
 }
 
 .App-header {
-  background-color: rgba(4, 57, 94, 1);
-  min-height: 100vh;
+  /*background-color: rgba(4, 57, 94, 1);*/
+  background-color: white;
+  height: 1024px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {

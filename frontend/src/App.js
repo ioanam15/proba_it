@@ -36,7 +36,7 @@ function App() {
 
 
       
-      <nav className="App-navbar" >
+      <nav className='App-navbar' >
         <img src={logo} className='App-logo' alt=""/>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
@@ -46,7 +46,7 @@ function App() {
         </div>
       </nav>
 
-      <body className="App-body">
+      <body className='App-body'>
       <button className="button-default" onClick={toggle}>Show Modal</button>
       <Modal
         isShowing={isShowing}
@@ -60,32 +60,73 @@ function App() {
           să înțeleagă mai bine nevoile și dorințele acesteia.</a>
         </div>
 
+        <div className='App-doipoll'>
+          <a className='App-poll'>
+            <a className='App-pollq'>Ce animal se afla pe tricourile departamentului de IT?</a>
+            <a className='App-pollm'>Make a choice:</a>
+            <a className='App-polla'>Un elefant</a>
+            <a className='App-polla'>O testoasa</a>
+            <a className='App-polla'>Un lenes</a>
+            <a className='App-polla'>Un caine</a>
+          </a>
+
+          <a className='App-poll'>
+            <a className='App-pollq'>Ce animal se afla pe tricourile departamentului de IT?</a>
+            <a className='App-pollm'>Make a choice:</a>
+            <a className='App-polla'>Un elefant</a>
+            <a className='App-polla'>O testoasa</a>
+            <a className='App-polla'>Un lenes</a>
+            <a className='App-polla'>Un caine</a>
+            <a className='App-vote'>Vote</a>
+          </a>
+        </div>
+
+        <div className='App-doipoll'>
+          <a className='App-poll'>
+            <a className='App-pollq'>Ce animal se afla pe tricourile departamentului de IT?</a>
+            <a className='App-pollm'>Make a choice:</a>
+            <a className='App-polla'>Un elefant</a>
+            <a className='App-polla'>O testoasa</a>
+            <a className='App-polla'>Un lenes</a>
+            <a className='App-polla'>Un caine</a>
+          </a>
+
+          <a className='App-poll'>
+            <a className='App-pollq'>Ce animal se afla pe tricourile departamentului de IT?</a>
+            <a className='App-pollm'>Make a choice:</a>
+            <a className='App-polla'>Un elefant</a>
+            <a className='App-polla'>O testoasa</a>
+            <a className='App-polla'>Un lenes</a>
+            <a className='App-polla'>Un caine</a>
+          </a>
+        </div>
+
         <div>
-          <a className="App-popup">
-            <img src={ex} className="App-ics" alt="ex" />
+          <a className='App-popup'>
+            <img src={ex} className='App-ics' alt="ex" />
             <a className='App-pp-log'>Login</a>
             <a className='App-camp'>Email</a>
             <a className='App-camp'>Password</a>
-            <Button className="App-pp-buton">Login</Button>
+            <Button className='App-pp-buton'>Login</Button>
           </a>
         </div>
         <div>
-          <a className="App-popup">
-            <img src={ex} className="App-ics" alt="ex" />
+          <a className='App-popup'>
+            <img src={ex} className='App-ics' alt="ex" />
             <a className='App-pp-log'>Register</a>
             <a className='App-camp'>Email</a>
             <a className='App-camp'>Password</a>
             <a className='App-camp'>Confirm password</a>
-            <Button className="App-pp-buton">Create account</Button>
+            <Button className='App-pp-buton'>Create account</Button>
           </a>
         </div>
       </body>
 
-      <footer className="App-footer">
+      <footer className='App-footer'>
         <p>
-        <img src={insta} alt="insta" href="https://www.instagram.com/lsacbucuresti/" />
-        <img src={fb} alt="fb" />
-        <img src={twitch} alt="twitch" />
+          <a href="https://www.instagram.com/lsacbucuresti/" > <img src={insta} alt="insta"/> </a>
+          <a href="https://www.facebook.com/LsacBucuresti" > <img src={fb} alt="fb" /> </a>
+          <a href="https://www.twitch.tv/lsac_bucuresti" > <img src={twitch} alt="twitch" /> </a>
         </p>
       </footer>
     </div>

@@ -30,9 +30,9 @@ const port = 5000;
 // }
 mongoose.set('strictQuery', false)
 mongoose.connect(process.env.MONGO_URI).then(() => console.log("Connected to MongoDB"));
-const MyModel = mongoose.model('Test', new mongoose.Schema({ name: String }));
-const user = new MyModel({name: "nume"});
-user.save();
+// const MyModel = mongoose.model('Test', new mongoose.Schema({ name: String }));
+// const user = new MyModel({name: "nume"});
+// user.save();
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);

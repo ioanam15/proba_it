@@ -13,26 +13,22 @@ import './App.css';
 import Modal from "./Modal";
 import useModal from './useModal';
 
-// const App2 = () => {
-//   const {isShowing, toggle} = useModal();
-//   return (
-//     <div className="App">
-//       <button className="button-default" onClick={toggle}>Show Modal</button>
-//       <Modal
-//         isShowing={isShowing}
-//         hide={toggle}
-//       />
-//     </div>
-//   );
-// };
-
-// export default App2;
-
 function App() {
-  const {isShowing, toggle} = useModal();
+  const [type, setType] = useState(""); //varianta default
+  const showLogin = () => {
+    setType("Login");
+  }
+  const showRegister = () => {
+    setType("Register");
+  }
+
+  const changeType= () => {
+    setType("");
+  }
+   ///const {isShowing, toggle} = useModal();
 
   return (
-    <div className="App">
+    <div className="App-body">
 
 
       
@@ -40,35 +36,37 @@ function App() {
         <img src={logo} className='App-logo' alt=""/>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a className='App-login'>Login</a>
-          <a className='App-register'>Register</a>
+          <a className='App-login' onClick={showLogin}>Login</a>
+          <a className='App-register' onClick={showRegister}>Register</a>
         </div>
         </div>
       </nav>
 
-      <body className='App-body'>
-      <button className="button-default" onClick={toggle}>Show Modal</button>
+      <div className='App-body'>
+      {/* <button className="button-default" onClick={toggle}>Show Modal</button>
       <Modal
         isShowing={isShowing}
         hide={toggle}
-      />
+      /> */}
 
         <div>
           <a className='App-testoasa'> <img src={testoasa} alt=""/></a>
           <a className='App-text'>Opiniile sunt mai importante ca niciodată. 
           Platformele de sondaje permit organizatorilor să culeagă feedback direct de la audiența lor și 
-          să înțeleagă mai bine nevoile și dorințele acesteia.</a>
+          să înțeleagă mai bine nevoile și dorințele acesteia.</a>
         </div>
 
+        <Modal type = {type} close={changeType}/>
+
         <div className='App-doipoll'>
-          <a className='App-poll'>
-            <a className='App-pollq'>Ce animal se afla pe tricourile departamentului de IT?</a>
-            <a className='App-pollm'>Make a choice:</a>
-            <a className='App-polla'>Un elefant</a>
-            <a className='App-polla'>O testoasa</a>
-            <a className='App-polla'>Un lenes</a>
-            <a className='App-polla'>Un caine</a>
-          </a>
+          <div className='App-poll'>
+            <div className='App-pollq'>Ce animal se afla pe tricourile departamentului de IT?</div>
+            <div className='App-pollm'>Make a choice:</div>
+            <div className='App-polla'>Un elefant</div>
+            <div className='App-polla'>O testoasa</div>
+            <div className='App-polla'>Un lenes</div>
+            <div className='App-polla'>Un caine</div>
+          </div>
 
           <a className='App-poll'>
             <a className='App-pollq'>Ce animal se afla pe tricourile departamentului de IT?</a>
@@ -101,7 +99,7 @@ function App() {
           </a>
         </div>
 
-        <div>
+        {/* <div>
           <a className='App-popup'>
             <img src={ex} className='App-ics' alt="ex" />
             <a className='App-pp-log'>Login</a>
@@ -119,14 +117,14 @@ function App() {
             <a className='App-camp'>Confirm password</a>
             <Button className='App-pp-buton'>Create account</Button>
           </a>
-        </div>
-      </body>
+        </div> */}
+      </div>
 
       <footer className='App-footer'>
         <p>
-          <a href="https://www.instagram.com/lsacbucuresti/" > <img src={insta} alt="insta"/> </a>
-          <a href="https://www.facebook.com/LsacBucuresti" > <img src={fb} alt="fb" /> </a>
-          <a href="https://www.twitch.tv/lsac_bucuresti" > <img src={twitch} alt="twitch" /> </a>
+          <a href="https://www.instagram.com/lsacbucuresti/" style={{"textDecoration" : "none"}}> <img src={insta} alt="insta"/> </a>
+          <a href="https://www.facebook.com/LsacBucuresti" style={{"textDecoration" : "none"}}> <img src={fb} alt="fb" /> </a>
+          <a href="https://www.twitch.tv/lsac_bucuresti" style={{"textDecoration" : "none"}}> <img src={twitch} alt="twitch" /> </a>
         </p>
       </footer>
     </div>

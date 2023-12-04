@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   display: block;
   float: left;
@@ -69,7 +65,7 @@
 
 .App-popup {
   z-index: 1;
-  position: fixed;
+  /* position: fixed; */
   /* display: none; */
   display: flex;
   flex-direction: column;
@@ -134,7 +130,8 @@
 
 .App-camp {
   display: flex;
-  color: rgba(255, 255, 255, 1);
+  /* color: rgba(255, 255, 255, 1); */
+  color: rgba(0, 0, 0, 1);
   font: Inter;
   font-weight: 500;
   font-size: 20px;
@@ -168,14 +165,21 @@
   line-height: 47.17px;
   text-align: left;
   width: 49vw;
-  height: 282px;
   padding-left: 103px;
   padding-top: 0vw;
 }
 
-.App-testoasa {
+.container {
   display: flex;
-  width: 51vw;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.App-testoasa {
+  /* width: 51vw; */
+  display: flex;
   height: 45vh;
   padding-top: 5vw;
   padding-left: 60vw;

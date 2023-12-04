@@ -1,0 +1,242 @@
+.App-logo {
+  display: block;
+  float: left;
+  width: 7vw;
+  height: 3vw;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  box-sizing: border-box;
+}
+
+.App-navbar {
+  display: flex;
+  background-color: rgba(255, 255, 255, 1);
+  height: 5vw;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  color: rgba(4, 57, 94, 1);
+  line-height: 26.63px;
+  padding-top: 0px;
+  overflow: hidden;
+  box-shadow: 0px 1px 14px rgba(2, 27, 44, 1);
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.App-login {
+  width: 58px;
+  line-height: 10vh;
+  padding-left: 79vw; 
+  text-decoration: none;
+  font-size: 3vh;
+  font: Inter;
+  font-weight: 500;
+}
+
+.App-register {
+    width: 88px;
+    height: 27px;
+    top: 15%;
+    padding-top: 15vh;
+    padding-left: 2vw; 
+    text-decoration: none;
+    font-size: 3vh;
+    font: Inter;
+    font-weight: 500;
+  }
+
+.App-footer {
+  background-color: rgba(255, 31, 102, 1);
+  width: 100%;
+  height: 154px;
+  top: 1990px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.App-popup {
+  z-index: 1;
+  /* position: fixed; */
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  width: 491px;
+  height: 522px;
+  top: 301px;
+  left: 474px;
+  border-radius: 22px;
+  background-color: rgba(4, 57, 94, 1);
+  line-height: 29.05px;
+  box-shadow: 0px 1px 9px rgba(67, 67, 67, 1);
+}
+
+.App-create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  width: 1172px;
+  height: 1180px;
+  padding-top: 124px;
+  padding-left: 134px;
+  border-radius: 29px;
+  background-color: rgba(4, 57, 94, 1);
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.69);
+  font: Inter;
+}
+
+.App-ics {
+  padding-bottom: 4vh;
+  padding-left: 28vw;
+}
+
+.App-pp-log {
+  color: rgba(255, 255, 255, 1);
+  font: Inter;
+  font-size: 5vh;
+  font-weight: 700;
+  padding-bottom: 40vh;
+}
+
+.App-pp-buton {
+  width: 10vw;
+  height: 50px;
+  /* padding-top: 1vh;
+  padding-bottom: 1vh; */
+  top: 733px;
+  left: 638px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  font: Inter;
+  font-weight: 600;
+  font-size: 3.2vh;
+  color: rgba(4, 57, 94, 1);
+}
+
+.App-camp {
+  display: flex;
+  /* color: rgba(255, 255, 255, 1); */
+  color: rgba(0, 0, 0, 1);
+  font: Inter;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  line-height: 24.2px;
+  border: 3px;
+  border-color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  width: 362px;
+  height: 59px;
+  border-radius: 9px;
+}
+
+.App-body {
+  background-image: url("bgdesk.png");
+  background-size: cover;
+  height: 2144px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.App-text {
+  display: flex;
+  font: Inter;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 47.17px;
+  text-align: left;
+  width: 49vw;
+  padding-left: 103px;
+  padding-top: 0vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.App-testoasa {
+  /* width: 51vw; */
+  display: flex;
+  height: 45vh;
+  padding-top: 5vw;
+  padding-left: 60vw;
+}
+
+.App-poll {
+  background-color: rgba(255, 255, 255, 1);
+  width: 571px;
+  height: 592px;
+  /* top: 616px;
+  left: 103px; */
+  border-radius: 26px;
+  box-shadow: 0px 1px 6px rgba(2, 27, 44, 1);
+  font: Inter;
+  color: rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.App-doipoll {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.App-pollq {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31.47px;
+  top: 653px;
+  left: 135px;
+}
+
+.App-pollm {
+  font-size: 18px;
+  font-weight: 300;
+  font-size: 21.78px;
+}
+
+.App-polla {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+}
+
+.App-vote {
+  background-color: rgba(4, 57, 94, 1);
+  display: flex;
+  width: 121px;
+  height: 41px;
+  border-radius: 5px;
+  font: Inter;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26.63px;
+  align-self: last baseline;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}

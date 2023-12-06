@@ -4,7 +4,7 @@ Tehnologiile folosite:
 - React pentru implementarea unor elemente predefinite si personalizarea lor
 - MongoDB pentru retinerea unor baze de date
 - CSS pentru stilizarea partii de frontend
-- MySQL, Postman
+- Postman
 
 Task-uri implementate - backend:
 - Functie pentru inregistrare in aplicatie

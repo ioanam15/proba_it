@@ -52,12 +52,12 @@ function App() {
 
         <Modal type = {type} close={changeType}/>
 
-        <div>
-          <a className='App-create'>
+        <div className='App-create'>
             <img src={ex} className='App-ics2' alt="ex" />
-            <a className='App-pp-crt'>Create a Poll</a>
+            <div className='App-pp-crt'>Create a Poll
+            <div className='App-cp-crt'>Type your question here</div>
+            </div>
             <Button className='App-pp-bt2'>Create Poll</Button>
-          </a>
         </div>
 
         <div className='App-doipoll'>

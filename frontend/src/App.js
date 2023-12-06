@@ -12,6 +12,7 @@ import './App.css';
 
 import Modal from "./Modal";
 import useModal from './useModal';
+import Create from "./Create"
 
 function App() {
   const [type, setType] = useState("");
@@ -20,6 +21,10 @@ function App() {
   }
   const showRegister = () => {
     setType("Register");
+  }
+
+  const showCreate = () => {
+    setType("Create");
   }
 
   const changeType= () => {
@@ -37,6 +42,7 @@ function App() {
         <div class="navbar-nav">
           <a className='App-login' onClick={showLogin}>Login</a>
           <a className='App-register' onClick={showRegister}>Register</a>
+          <a className='App-cr' onClick={showCreate}>Create Poll</a>
         </div>
         </div>
       </nav>
@@ -51,14 +57,15 @@ function App() {
         </div>
 
         <Modal type = {type} close={changeType}/>
+        <Create type = {type} close={changeType}/>
 
-        <div className='App-create'>
+        {/* <div className='App-create'>
             <img src={ex} className='App-ics2' alt="ex" />
             <div className='App-pp-crt'>Create a Poll
             <div className='App-cp-crt'>Type your question here</div>
             </div>
             <Button className='App-pp-bt2'>Create Poll</Button>
-        </div>
+        </div> */}
 
         <div className='App-doipoll'>
           <div className='App-poll'>

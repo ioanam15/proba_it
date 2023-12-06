@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import ex from './ph_x-fillex.png';
 import Button from 'react-bootstrap/Button';
+
 const Modal = (props) => {
   const [hide, setHide] = useState(props.type === "");
   const makeHidden = () => {
@@ -22,7 +23,8 @@ const Modal = (props) => {
         <input type='text' className='App-camp' placeholder='Email'/>
         <input type='text' className='App-camp' placeholder='Password'/>
         {props.type === "Register" ? (<input type='text' className='App-camp' placeholder='Confirm Password'/>) : null }
-        <Button className='App-pp-buton'>{props.type === "Login" ? "Login" : "Create account"}</Button>
+        <Button className='App-pp-buton' >{props.type === "Login" ? "Login" : "Create account"}</Button>
+
       </div>
     ) : null
   );

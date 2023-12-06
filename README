@@ -1,0 +1,26 @@
+Tehnologiile folosite:
+- VS Code pentru scrierea efectiva a codului
+- NodeJS pentru scrierea functiilor din partea de backend
+- React pentru implementarea unor elemente predefinite si personalizarea lor
+- MongoDB pentru retinerea unor baze de date
+- CSS pentru stilizarea partii de frontend
+- MySQL, Postman
+
+Task-uri implementate - backend:
+- Functie pentru inregistrare in aplicatie
+- Functie pentru autentificare in aplicatie
+- Functie pentru returnarea poll-urilor din baza de date
+- Functie pentru crearea unui poll
+- Functie pentru stergerea unui poll
+- Functie pentru verificarea daca un utilizator este logat
+
+Task-uri implementate - frontend:
+- Navbar cu butoane pentru login, register, creare de poll-uri
+- Footer cu link-uri catre pagini LSAC
+- Ferestre pop-up pentru login, register, creare de poll-uri
+- Pagina de poll-uri
+
+Nivelul meu de experienta initial era aproape de zero, singura mea tangenta cu un astfel de subiect fiind un optional de CSS din clasa a 9-a.
+Pe partea de frontend, am invatat cum sunt legate intre ele toate elementele unui site, cum pot crea un navbar, un footer, o pagina cu care utilizatorul sa poata interactiona, cum sunt gestionate diferite proprietati ale unui element legate de culori, dimensiuni, ori de felul in care acesta este afisat in cadrul unei pagini web.
+Pe partea de backend, am invatat cum sa scriu diverse functii pentru gestionarea unor informatii de la tastatura, cum functioneaza o baza de date si cum arata schema unei entitati din aceasta.
+Proba m-a ajutat sa inteleg mai bine diferite limbaje de programare, sa vad ce cod se afla in spatele unui site si ce presupune crearea acestuia, de cate aplicatii si tehnici este nevoie pentru buna lui functionare.

@@ -16,25 +16,25 @@ import Create from "./Create"
 
 function App() {
   const [type, setType] = useState("");
+  const [isCreateShown, setIsCreateShown] = useState(false);
   const showLogin = () => {
     setType("Login");
   }
   const showRegister = () => {
     setType("Register");
   }
-
   const showCreate = () => {
-    setType("Create");
+    setIsCreateShown(true);
   }
-
+  const hideCreate = () => {
+    setIsCreateShown(false);
+  }
   const changeType= () => {
     setType("");
   }
 
   return (
     <div className="App-body">
-
-
       
       <nav className='App-navbar' >
         <img src={logo} className='App-logo' alt=""/>
@@ -57,15 +57,7 @@ function App() {
         </div>
 
         <Modal type = {type} close={changeType}/>
-        <Create type = {type} close={changeType}/>
-
-        {/* <div className='App-create'>
-            <img src={ex} className='App-ics2' alt="ex" />
-            <div className='App-pp-crt'>Create a Poll
-            <div className='App-cp-crt'>Type your question here</div>
-            </div>
-            <Button className='App-pp-bt2'>Create Poll</Button>
-        </div> */}
+        <Create show = {isCreateShown} close = {hideCreate}/>
 
         <div className='App-doipoll'>
           <div className='App-poll'>

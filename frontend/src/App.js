@@ -12,25 +12,29 @@ import './App.css';
 
 import Modal from "./Modal";
 import useModal from './useModal';
+import Create from "./Create"
 
 function App() {
-  const [type, setType] = useState(""); //varianta default
+  const [type, setType] = useState("");
+  const [isCreateShown, setIsCreateShown] = useState(false);
   const showLogin = () => {
     setType("Login");
   }
   const showRegister = () => {
     setType("Register");
   }
-
+  const showCreate = () => {
+    setIsCreateShown(true);
+  }
+  const hideCreate = () => {
+    setIsCreateShown(false);
+  }
   const changeType= () => {
     setType("");
   }
-   ///const {isShowing, toggle} = useModal();
 
   return (
     <div className="App-body">
-
-
       
       <nav className='App-navbar' >
         <img src={logo} className='App-logo' alt=""/>
@@ -38,16 +42,12 @@ function App() {
         <div class="navbar-nav">
           <a className='App-login' onClick={showLogin}>Login</a>
           <a className='App-register' onClick={showRegister}>Register</a>
+          <a className='App-cr' onClick={showCreate}>Create Poll</a>
         </div>
         </div>
       </nav>
 
       <div className='App-body'>
-      {/* <button className="button-default" onClick={toggle}>Show Modal</button>
-      <Modal
-        isShowing={isShowing}
-        hide={toggle}
-      /> */}
 
         <div>
           <a className='App-testoasa'> <img src={testoasa} alt=""/></a>
@@ -57,6 +57,7 @@ function App() {
         </div>
 
         <Modal type = {type} close={changeType}/>
+        <Create show = {isCreateShown} close = {hideCreate}/>
 
         <div className='App-doipoll'>
           <div className='App-poll'>
@@ -66,6 +67,7 @@ function App() {
             <div className='App-polla'>O testoasa</div>
             <div className='App-polla'>Un lenes</div>
             <div className='App-polla'>Un caine</div>
+            <a className='App-vote'>Vote</a>
           </div>
 
           <a className='App-poll'>
@@ -87,6 +89,7 @@ function App() {
             <a className='App-polla'>O testoasa</a>
             <a className='App-polla'>Un lenes</a>
             <a className='App-polla'>Un caine</a>
+            <a className='App-vote'>Vote</a>
           </a>
 
           <a className='App-poll'>
@@ -96,28 +99,9 @@ function App() {
             <a className='App-polla'>O testoasa</a>
             <a className='App-polla'>Un lenes</a>
             <a className='App-polla'>Un caine</a>
+            <a className='App-vote'>Vote</a>
           </a>
         </div>
-
-        {/* <div>
-          <a className='App-popup'>
-            <img src={ex} className='App-ics' alt="ex" />
-            <a className='App-pp-log'>Login</a>
-            <a className='App-camp'>Email</a>
-            <a className='App-camp'>Password</a>
-            <Button className='App-pp-buton'>Login</Button>
-          </a>
-        </div>
-        <div>
-          <a className='App-popup'>
-            <img src={ex} className='App-ics' alt="ex" />
-            <a className='App-pp-log'>Register</a>
-            <a className='App-camp'>Email</a>
-            <a className='App-camp'>Password</a>
-            <a className='App-camp'>Confirm password</a>
-            <Button className='App-pp-buton'>Create account</Button>
-          </a>
-        </div> */}
       </div>
 
       <footer className='App-footer'>

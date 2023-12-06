@@ -15,8 +15,6 @@
   width: 100%;
   top: 0;
   position: sticky;
-  /*align-items: center;*/
-  /*justify-content: center;*/
   color: rgba(4, 57, 94, 1);
   line-height: 26.63px;
   padding-top: 0px;
@@ -29,7 +27,7 @@
 .App-login {
   width: 58px;
   line-height: 10vh;
-  padding-left: 79vw; 
+  padding-left: 70vw; 
   text-decoration: none;
   font-size: 3vh;
   font: Inter;
@@ -41,6 +39,16 @@
     height: 27px;
     top: 15%;
     padding-top: 15vh;
+    padding-left: 2vw; 
+    text-decoration: none;
+    font-size: 3vh;
+    font: Inter;
+    font-weight: 500;
+  }
+
+  .App-cr {
+    width: 58px;
+    line-height: 10vh;
     padding-left: 2vw; 
     text-decoration: none;
     font-size: 3vh;
@@ -65,8 +73,6 @@
 
 .App-popup {
   z-index: 1;
-  /* position: fixed; */
-  /* display: none; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,13 +80,13 @@
   align-items: center;
   align-content: space-around;
   width: 491px;
-  height: 522px;
+  height: 550px;
   top: 301px;
   left: 474px;
   border-radius: 22px;
   background-color: rgba(4, 57, 94, 1);
   line-height: 29.05px;
-  box-shadow: 0px 1px 9px rgba(67, 67, 67, 1);
+  box-shadow: 0px 1px 9px rgba(0, 0, 0, 1);
 }
 
 .App-create {
@@ -90,19 +96,64 @@
   justify-content: space-around;
   align-items: center;
   align-content: space-around;
-  width: 1172px;
-  height: 1180px;
+  width: 60vw;
+  height: 80vh;
   padding-top: 124px;
   padding-left: 134px;
   border-radius: 29px;
   background-color: rgba(4, 57, 94, 1);
   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.69);
   font: Inter;
+  color: rgba(255, 255, 255, 1);
+}
+
+.App-cp-crt {
+  display: flex;
+  color: rgba(255, 255, 255, 1);
+  font: Inter;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31.47px;
+  background-color: rgba(255, 255, 255, 0.49);
+  width: 57vw;
+  height: 10vh;
+  top: 10vh;
+  border-top-color: rgba(255, 31, 102, 1);
+  align-self: flex-start;
+  text-align: left;
+}
+
+.App-ics2 {
+  padding-bottom: 15vh;
+  padding-left: 50vw;
 }
 
 .App-ics {
   padding-bottom: 4vh;
   padding-left: 28vw;
+}
+
+.App-pp-crt {
+  color: rgba(255, 255, 255, 1);
+  font: Inter;
+  font-size: 5vh;
+  font-weight: 700;
+  padding-bottom: 60vh;
+}
+
+.App-pp-bt2 {
+  width: 10vw;
+  height: 50px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  top: 733px;
+  left: 638px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  font: Inter;
+  font-weight: 600;
+  font-size: 3.2vh;
+  color: rgba(4, 57, 94, 1);
 }
 
 .App-pp-log {
@@ -116,21 +167,20 @@
 .App-pp-buton {
   width: 10vw;
   height: 50px;
-  /* padding-top: 1vh;
-  padding-bottom: 1vh; */
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   top: 733px;
   left: 638px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
   font: Inter;
   font-weight: 600;
-  font-size: 3.2vh;
+  font-size: 2.75vh;
   color: rgba(4, 57, 94, 1);
 }
 
 .App-camp {
   display: flex;
-  /* color: rgba(255, 255, 255, 1); */
   color: rgba(0, 0, 0, 1);
   font: Inter;
   font-weight: 500;
@@ -169,28 +219,19 @@
   padding-top: 0vw;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
 .App-testoasa {
-  /* width: 51vw; */
   display: flex;
   height: 45vh;
   padding-top: 5vw;
   padding-left: 60vw;
 }
 
-.App-poll {
+.App-poll { 
   background-color: rgba(255, 255, 255, 1);
   width: 571px;
   height: 592px;
-  /* top: 616px;
-  left: 103px; */
+  top: 616px;
+  left: 103px;
   border-radius: 26px;
   box-shadow: 0px 1px 6px rgba(2, 27, 44, 1);
   font: Inter;
